@@ -1,6 +1,6 @@
-import java.util.Scanner; // 1508670 Qianshan.chen15 
+import java.util.Scanner; // 1508670 Qianshan.chen15
 
-public class Assignment2_1508670 {
+public class Assignment2 {
 
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
@@ -29,6 +29,7 @@ public class Assignment2_1508670 {
          return true;
      }
    
+
      public static boolean isRightStartAndEnds(String s){// To make sure not start with "000" or "666"
          String[] sArr = s.split("-");                   // and not end with all zeros in third group.
          String start = sArr[0];
@@ -68,7 +69,7 @@ public class Assignment2_1508670 {
     }
 
     public static String removeChar(String a, char rem) {//A tool to remove '-' in numbers.
-        String s = "";
+        String s = a;
         char[] ca = a.toCharArray();
         int len = ca.length;
         for (int i = 0; i < len; i++) {
