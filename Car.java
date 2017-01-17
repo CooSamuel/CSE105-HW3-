@@ -25,9 +25,7 @@ public class Car {
         lastIdNumber = 2000;
     }
 
-    // this method is to create a Car last. the parameter String is
-    // (name,prizeIn,dateOfPurchased,prizeOut,dateOfSold)
-    // to get these parameters of a car.
+    
     public Car(String line) {
         SimpleDateFormat df = new SimpleDateFormat("y-M-d");
         String[] sArr = line.split(",");
